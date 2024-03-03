@@ -1,6 +1,7 @@
 
 const http = require('http').createServer();
 
+//accessing backEnd from the frontEnd
 const io = require('socket.io')(http, {
     cors: { origin: "*" }
 });
@@ -33,4 +34,3 @@ http.listen(8080, () => console.log('listening on http://localhost:8080') );
 // });
 
 
- 
